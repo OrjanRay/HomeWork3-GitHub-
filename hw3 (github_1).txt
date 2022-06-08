@@ -1,0 +1,245 @@
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 1. Создать внешний репозиторий c названием JSON. - 
+Creating new repository on github.com JSON
+ 2. Клонировать репозиторий JSON на локальный компьютер. 
+git clone https://github.com/OrjanRay/JSON.git
+ 3. Внутри локального JSON создать файл “new.json”. 
+touch new.json
+ 4. Добавить файл под гит. 
+git add new.json
+ 5. Закоммитить файл. 
+git commit -m "file created"
+ 6. Отправить файл на внешний GitHub репозиторий. 
+git push
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+nano new.json
+{
+  "name": "Hoiuk Bohdan",
+  "age": "29",
+  "petsNumber": "2",
+  "expectedSalary": "3000 dollars"
+}
+ 8. Отправить изменения на внешний репозиторий. 
+git add new.json 
+git commit -m "text added"
+git push
+ 9. Создать файл preferences.json 
+git touch preferences.json
+ 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+nano preferences.json
+{
+  "favMovie": "Braveheart",
+  "favSerial": "True Detective",
+  "favFood": "Caesar Salad",
+  "favSeason": "Spring",
+  "countryToVisit": "USA"
+}
+ 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+git touch skills.json
+nano skills.json
+{
+  "skill_1": "GitHub",
+  "skill_2": "Bash Console",
+  "skill_3": "Postman",
+  "skill_4": "Charles",
+  "skill_5": "jMeter",
+  "skill_6": "Android Studio",
+  "skill_7": "Fiddler",
+  "skill_8": "MySQL"
+}
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -m "added two more files"
+ 13. На веб интерфейсе создать файл bug_report.json. 
+Creating new file on repository named "bug_report.json"
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе. 
+Commit comment: "adding bug report file"
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Editing file on remote repository, adding bug report
+{
+  
+  "bug_ID": "123a",
+  "title": "Contact form - No confirmation message is shown",
+  "summary": "the page where the contact form is on does not show any confirmation message after submitting a contact request",
+  "STR": "1 open the contact page, 2 click on the contact form, 3 fill in contact request, 4 submit a contact request",
+  "exp_res": "confirmation window is shown after submitting a contact request",
+  "act_res": "no confirmation window is shown",
+  "screenshot": "attached"
+
+}
+  
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit comment: "bug report 1 added"
+ 17. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 1. Создать внешний репозиторий c названием XML.
+Creating new repository https://github.com/OrjanRay/XML.git
+ 2. Клонировать репозиторий XML на локальный компьютер. 
+git clone https://github.com/OrjanRay/XML.git
+ 3. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+ 4. Добавить файл под гит.
+git add new.xml
+ 5. Закоммитить файл.
+git commit -m "xml file created"
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+nano new.xml
+<BIO>
+ <NAME>Bohdan Hoiuk Mykytovych</NAME>
+ <AGE>29</AGE>
+ <PETS_NUMBER>2</PETS_NUMBER>
+ <SALARY_EXPECTATION>3000 dollars</SALARY_EXPECTATION>
+</BIO>
+ 8. Отправить изменения на внешний репозиторий.
+git status
+git add new.xml
+git commit -m "info added"
+git push
+ 9. Создать файл preferences.xml
+touch preferences.xml
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+nano preferences.xml
+<FAV_STUFF>
+ <FAV_MOVIE>Braveheart</FAV_MOVIE>
+ <FAV_SERIAL>True Detective</FAV_SERIAL>
+ <FAV_FOOD>The Caesar Salad</FAV_FOOD>
+ <FAV_SEASON>Spring</FAV_SEASON>
+ <COUNTRY_TO_VISIT>USA</COUNTRY_TO_VISIT>
+</FAV_STUFF>
+ 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+nano skills.xml
+<SKILLS>
+  <SKILL_1>GitHub</SKILL_1>
+  <SKILL_2>Bash Console</SKILL_2>
+  <SKILL_3>Postman</SKILL_3>
+  <SKILL_4>Charles</SKILL_4>
+  <SKILL_5>jMeter</SKILL_5>
+  <SKILL_6>Android Studio</SKILL_6>
+  <SKILL_7>Fiddler</SKILL_7>
+  <SKILL_8>MySQL</SKILL_8>
+</SKILLS>
+ 12. Сделать коммит в одну строку. 
+git status
+git add -A
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git commit -m "two files added"
+git push
+ 14. На веб интерфейсе создать файл bug_report.xml. 
+Creating bug_report.xml at remote repository
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commited: "bug report file created"
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Editing bug_report.xml file
+<?xml version="1.0"?>
+ <BUG_REPORT_123a>
+   <BUG_ID>123a</BUG_ID>
+   <TITLE>Contact form - No confirmation message is shown</TITLE>
+   <SUMMARY>the page where the contact form is on does not show any confirmation message after submitting a contact request</SUMMARY>
+   <STR>1 open the contact page, 2 click on the contact form, 3 fill in contact request, 4 submit a contact request</STR>
+   <EXP_RES>confirmation window is shown after submitting a contact request</EXP_RES>
+   <ACT_RES>no confirmation window is shown</ACT_RES>
+   <SCREENSHOT>attached</SCREENSHOT>
+ </BUG_REPORT_123a>
+
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commited: "Bug report added"
+ 18. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+Creating new repository TXT
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/OrjanRay/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+cd TXT
+git status
+touch new.txt
+ 4. Добавить файл под гит.
+git status
+git add new.txt
+ 5. Закоммитить файл.
+git commit -m "new file created"
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+nano new.txt
+Full name: Hoiuk Bohdan
+Age: 29
+Pets number: 2
+Expected salary: 3000 dollars
+ 8. Отправить изменения на внешний репозиторий.
+git status
+git add new.txt
+git commit -m "info added"
+git push
+ 9. Создать файл preferences.txt
+touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+nano preferences.txt
+Favorite movie: Braveheart
+Favorite serial: True Detective
+Favorite food: The Caesar salad
+Favorite season: Spring
+Country I would like to visit: USA
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+touch skills.txt
+nano skills.txt
+ Skills to learn:
+ 1,GitHub
+ 2.Bash Console
+ 3.Postman
+ 4.Charles
+ 5.jMeter
+ 6.Android Studio
+ 7.Fiddler
+ 8.MySQL
+
+ 12. Сделать коммит в одну строку.
+git add -A
+git commit "2 new files added"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Created bug_report.txt at TXT repository
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commited: "bug report added"
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Adding bug_report:
+
+   Bug ID: 123a
+   Title: Contact form - No confirmation message is shown
+   Summary: The page where the contact form is on does not show any confirmation message after submitting a contact request
+   STR: 
+   1 open the contact page 
+   2 click on the contact form
+   3 fill in contact request 
+   4 submit a contact request
+   Expected result: Confirmation window is shown after submitting a contact request
+   Actual result: No confirmation window is shown
+   Screenshot: attached
+ 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commited "new info added"
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
